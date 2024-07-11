@@ -1,18 +1,21 @@
 # ERC20 Token <br />
-**Overview** <br />
+## Overview <br />
 MyNewContract is a simple ERC20 token contract built using Solidity. This contract allows the deployment of an ERC20 token named "WORLDCUP" with the symbol "WC". The contract includes functionalities for minting new tokens, burning tokens, and transferring tokens. <br />
 
 # Description<br />
-This program has a contract named "MyNewContract" which is inheriting the properties of ERC20 token. It has one pulic variable address which will contain the address of the owner. Then a modifier is defined named "onlyOwner" which has conditions that only owner can access that function. Next, we have the constructor which is initializing the name and symbol for our token. <br />
-**Functions**<br />
---> mintTokens- it allows the owner to mint new tokens to any address. <br />
---> burn- it allows any token holder to burn their tokens with the amount they will pass.<br />
---> transferToken- it allows to transfer amount to any account or from any account. <br />
+This program has a contract named "MyNewContract" which inherits the properties of the ERC20 token. It has one public variable owner which contains the address of the contract owner. A modifier named onlyOwner is defined to ensure that only the owner can access certain functions. The constructor initializes the name and symbol for our token.<br />
+## Functions<br />
+* mintTokens: Allows the owner to mint new tokens to any address.
+* burn: Allows any token holder to burn their tokens by specifying the amount.
+* transferTokens: Allows transferring tokens to any account.
 
 # Getting Started<br />
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at https://remix.ethereum.org/. <br />
-# Executing Program<br />
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., error.sol). Copy and paste the following code into the file: <br />
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the [Remix website](https://remix.ethereum.org/). <br />
+# Installation
+1. Open Remix IDE.
+2. Create a new file by clicking on the "+" icon in the left-hand sidebar.
+3. Save the file with a .sol extension (e.g., MyNewContract.sol).
+4. Copy and paste the following code into the file:
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
@@ -50,5 +53,6 @@ contract MyNewContract is ERC20 {
     }
 }
 ```
-Deploy the contract using Remix(platform to compile and deploy solidity contracts) and implement all the functionalities by passing suitable values. 
+# Executing Program
+Deploy the contract using Remix (a platform to compile and deploy Solidity contracts) and implement all the functionalities by passing suitable values.
 
